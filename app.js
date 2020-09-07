@@ -33,10 +33,7 @@ app.get('/', (req, res) => {
             res.render('home', { gifs })
         }).catch(console.error);
   })
-app.get("/greetings/:name", (req, res) => {
-  const name = req.params.name;
-  res.render("greetings", { name });
-});
+
 // Start Server
 const PORT = 3000;
 app.listen(PORT, () => {
