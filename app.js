@@ -3,6 +3,10 @@ const express = require("express");
 
 //App setup
 const app = express();
+
+app.use(express.static('public'));
+
+
 const Tenor = require("tenorjs").client({
     // Replace with your own key
     "Key": "9GACLWOOOBL7", // https://tenor.com/developer/keyregistration

@@ -1,8 +1,13 @@
 <h1>Search for GIFs</h1>
-<form action="/">
+<form action="/" class="search-form">
     <input type="text" name="term">
     <button type="submit">Search</button>
+    
 </form>
+<form action="/">
+    <button type="submit">Trending</button>
+</form>
+
 {{#each gifs}}
 <div class="tenor-gif-embed" data-postid="{{this.id}}" data-share-method="host" data-width="500px"
     data-aspect-ration="1.2266666666666666">
